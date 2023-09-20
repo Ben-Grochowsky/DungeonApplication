@@ -1,8 +1,8 @@
-﻿
+﻿using DungeonLibrary;
 
 namespace DungeonApp
 {
-    internal class Program
+    internal class DungeonMenu
     {
         static void Main(string[] args)
         {
@@ -11,6 +11,22 @@ namespace DungeonApp
             #endregion
 
             //TODO Create a player
+            Hero h1 = new Hero();
+
+            h1.Name = "Frodo Baggins";
+            h1.HitChance = CalcHitChance();
+            h1.Block = CalcBlock();
+            h1.MaxLife = 40;
+            h1.Life = 40;
+
+            Weapon w1 = new DungeonLibrary.Weapon();
+
+            w1.MinDamage = 4;
+            w1.MaxDamage = 15;
+            w1.Name = "Sting";
+            w1.BonusHitChance = 5;
+            w1.IsTwoHanded = false;
+
 
             //Game loop:
             bool exit = false;
@@ -63,7 +79,7 @@ namespace DungeonApp
                             //print monster info here
                             break;
 
-                        case "X":                            
+                        case "X":
                         case "E":
                             Console.WriteLine("No one likes a quitter...");
                             //exit both loops
@@ -93,6 +109,22 @@ namespace DungeonApp
             string[] rooms = { "Room1", "Room2", "Room3", "Room4", "Room5" };
             int randomRoom = randRoom.Next(rooms.Length);
             return rooms[randomRoom];
+        }
+        private static int CalcHitChance()
+        {
+            int hitChance = 3;
+            Console.WriteLine(hitChance);
+            return hitChance;
+        }
+        private static int CalcBlock()
+        {
+            int block = 2;
+            Console.WriteLine(block);
+            return block;
+        }
+        private static int CalcDamage()
+        {
+            return 0;
         }
     }//end class
 }//end namespace
