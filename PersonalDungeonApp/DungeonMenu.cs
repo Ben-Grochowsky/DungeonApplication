@@ -110,21 +110,5 @@ namespace DungeonApp
             int randomRoom = randRoom.Next(rooms.Length);
             return rooms[randomRoom];
         }
-        private static int CalcHitChance()
-        {
-            int hitChance = 3;
-            Console.WriteLine(hitChance);
-            return hitChance;
-        }
-        private static int CalcBlock()
-        {
-            int block = 2;
-            Console.WriteLine(block);
-            return block;
-        }
-        private static int CalcDamage()
-        {
-            return 0;
-        }
     }//end class
 }//end namespace
