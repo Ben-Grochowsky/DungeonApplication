@@ -7,26 +7,15 @@ namespace DungeonApp
         static void Main(string[] args)
         {
             #region Title/Introduction
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, World!\n");
             #endregion
 
             //TODO Create a player
-            Hero h1 = new Hero();
+            Player h1 = new("Frodo Baggins", 6, 5, 40, Race.Hobbit, WeaponType.Sword);
+            Console.WriteLine(h1);
 
-            h1.Name = "Frodo Baggins";
-            h1.HitChance = CalcHitChance();
-            h1.Block = CalcBlock();
-            h1.MaxLife = 40;
-            h1.Life = 40;
-
-            Weapon w1 = new DungeonLibrary.Weapon();
-
-            w1.MinDamage = 4;
-            w1.MaxDamage = 15;
-            w1.Name = "Sting";
-            w1.BonusHitChance = 5;
-            w1.IsTwoHanded = false;
-
+            Weapon w1 = new Weapon("Sting", 1, 15, 5, false, WeaponType.Sword);
+            Console.WriteLine(w1);
 
             //Game loop:
             bool exit = false;
