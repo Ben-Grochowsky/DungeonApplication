@@ -67,7 +67,7 @@
             return $"----- Your Hero -----\n" +
                    $"Name: {Name}\n" +
                    $"Life: {Life} of {MaxLife}\n" +
-                   $"Block: {Block}%";
+                   $"Block: {Block}%\n";
         }
 
         //virtual keyword allows these methods to be overridden in child classes

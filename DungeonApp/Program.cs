@@ -90,7 +90,7 @@ namespace DungeonApp
             Random randRoom = new Random();
             //TODO Update room descriptions
             //Collection Initialization Syntax
-            string[] rooms = { "Room1", "Room2", "Room3", "Room4", "Room5" };
+            string[] rooms = { "You arrive in the room and see a massive tree at the center of the room and you decide to walk towards it.\nWhile walking towards it you encounter a monster", "Room2", "Room3", "Room4", "Room5" };
             int randomRoom = randRoom.Next(rooms.Length);
             return rooms[randomRoom];
         }

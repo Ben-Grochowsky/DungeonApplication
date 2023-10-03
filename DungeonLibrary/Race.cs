@@ -8,10 +8,10 @@ namespace DungeonLibrary
 {
     public enum Race
     {
-        Hobbit,
-        Elf,
-        Dwarf,
-        Man,
-        Maiar,
+        Argonian,
+        High_Elf,
+        Breton,
+        Nord,
+        DarkElf,
     }
 }

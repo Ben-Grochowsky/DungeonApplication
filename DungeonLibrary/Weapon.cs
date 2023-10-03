@@ -88,8 +88,7 @@ namespace DungeonLibrary
         public override string ToString()
         {
             //return base.ToString();//namespace.classname
-            return $"----- Weapon Name -----\n" +
-                   $"Name: {Name}\n" +
+            return $"{Name}\n" +
                    $"Damage: {MinDamage} to {MaxDamage}\n" +
                    $"Bonus Hit: {BonusHitChance}%\n" +
                    $"{(IsTwoHanded ? "Two-" : "One")}Handed {Type}";
