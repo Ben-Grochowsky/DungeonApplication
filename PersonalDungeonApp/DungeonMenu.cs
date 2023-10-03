@@ -158,7 +158,7 @@ namespace DungeonApp
 
                     if (player.Life <= 0)
                     {
-                        Console.WriteLine("Dude... You died\a");
+                        Console.WriteLine("You took one too many arrows to the knee...\a");
 
                         exit = true;//leave both loops
                     }

@@ -75,7 +75,7 @@ namespace DungeonLibrary
         public override string ToString()
         {
             //! Update the ToString() to include your new prop
-            return base.ToString() + $"{HitChance}";
+            return base.ToString() + $"";
         }
     }
 }
